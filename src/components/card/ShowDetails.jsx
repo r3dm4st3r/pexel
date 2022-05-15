@@ -1,4 +1,3 @@
-import ShowImage from "./ShowImage";
 import LazyLoad from "react-lazyload";
 import BlurImage from "./BlurImage";
 

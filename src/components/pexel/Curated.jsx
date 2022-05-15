@@ -32,6 +32,7 @@ const Curated = () => {
 
   useEffect(()=> {
     getCuratedData().then(r=>r);
+    // eslint-disable-next-line
   }, [])
 
   useEffect(()=> {
@@ -41,6 +42,7 @@ const Curated = () => {
         curatedList: data
       }
     })
+      // eslint-disable-next-line
   }, [data])
 
   return(

@@ -73,6 +73,7 @@ const Featured = (props) => {
 
   useEffect(()=> {
       getFeaturedData().then(r=>r);
+      // eslint-disable-next-line
   }, [])
 
   useEffect(()=> {
@@ -91,6 +92,7 @@ const Featured = (props) => {
             }
         })
     }
+      // eslint-disable-next-line
   }, [data, details])
 
   return(
