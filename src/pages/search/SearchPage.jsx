@@ -5,7 +5,6 @@ import useGlobalState from "../../hooks/useGlobalState";
 import ShowImage from "../../components/card/ShowImage";
 import HomeSearch from "../../components/search/HomeSearch";
 import {Images} from "../../helper/pexel";
-import noImage from "../../assets/img/searchBg.svg";
 
 const SearchPage = () => {
     const { globalData } = useGlobalState();
@@ -20,7 +19,7 @@ const SearchPage = () => {
                     enableResizableChildren={true}
                     className="w-full"
                 >
-                    {images?.photos?.map((item, index) => {
+                    {images?.photos?.map((item) => {
                         return (
                             <div className="w-full sm:w-[50%] md:w-[20%] p-2" key={item?.id}>
                                 <LazyLoad  height={100}>
