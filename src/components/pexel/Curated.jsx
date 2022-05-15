@@ -19,7 +19,7 @@ const Curated = () => {
   }
 
   const showCuratedData = () => {
-    return globalData?.curatedList?.photos.map((item, index) => {
+    return globalData?.curatedList?.photos?.map((item) => {
       return(
           <div key={item.id}>
               <LazyLoad  height={100}>
